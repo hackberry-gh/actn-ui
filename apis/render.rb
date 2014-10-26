@@ -1,3 +1,4 @@
+require 'erb'
 require 'tilt/erb' 
 require 'actn/api/ui'
 

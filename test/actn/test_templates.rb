@@ -11,7 +11,7 @@ module Actn
       include Goliath::TestHelper
     
       def setup
-        @template = Actn::Api::Template.create({filename: "home.erb", body: "HOME!"})
+        @template = Actn::Api::Template.create({filename: "home.html.erb", body: "HOME!"})
         @api_options = { :verbose => true, :log_stdout => true, config: "#{Actn::Api.gem_root}/config/common.rb" }
         @err = Proc.new { assert false, "API request failed" }
       end
