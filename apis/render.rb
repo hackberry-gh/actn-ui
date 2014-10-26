@@ -11,8 +11,11 @@ class Render < Actn::Api::UI
   
   get "/*" do
     filename = env['REQUEST_PATH'][1..-1]
-    filename = "#{filename}.html" unless filename.include?(".")
-    filename = INDEX if filename == ""
+    if filename == ""
+      filename = INDEX       
+    else  
+      filename = "#{filename}.html" unless filename.include?(".")
+    end
     erb filename
   end
   
