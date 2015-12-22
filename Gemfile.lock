@@ -74,7 +74,7 @@ GEM
     em-websocket (0.3.8)
       addressable (>= 2.1.1)
       eventmachine (>= 0.12.9)
-    eventmachine (1.0.3)
+    eventmachine (1.0.8)
     execjs (2.2.2)
     goliath (1.0.4)
       async-rack
@@ -142,7 +142,11 @@ DEPENDENCIES
   actn-jobs!
   coffee-script (~> 2.2)
   em-http-request
+  eventmachine (= 1.0.8)
   goliath_rack_sprockets!
   minitest
   rake
   sass (~> 3.1)
+
+BUNDLED WITH
+   1.10.6
